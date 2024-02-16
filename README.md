@@ -42,7 +42,7 @@ This project implements an automated job processing system utilizing AWS Lambda,
 
 #### Lambda Functions
 
-- **Lambda Function 1**: Set up with the Python 3.x runtime, using the IAM role with the necessary permissions. It generates a unique job ID, submits the job to AWS Batch, and logs the details to MongoDB when triggered by the AWS API Gateway.
+- **SubmitBatchJob**: Set up with the Python 3.x runtime, using the IAM role with the necessary permissions. It generates a unique job ID, submits the job to AWS Batch, and logs the details to MongoDB when triggered by the AWS API Gateway.
   
 - **Lambda Function 2**: Triggered by CloudWatch Events upon AWS Batch job completion, it logs the job results into MongoDB.
 
